@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise generator</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: flex-end;
+      }
+      .form__label {
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        text-transform: uppercase;
+        padding: 4px 10px;
+      }
+      input {
+        padding: 5px;
+      }
+      label {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="link-return"><a href="index.html">Go back</a></p>
+
+    <form class="form">
+      <label class="form__label">
+        First delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+      <label class="form__label">
+        Delay step (ms)
+        <input type="number" name="step" required />
+      </label>
+      <label class="form__label">
+        Amount
+        <input type="number" name="amount" required />
+      </label>
+      <button type="submit" id="submit">Create promises</button>
+    </form>
+
+    <script src="js/03-promises.js" type="module"></script>
+  </body>
+</html>
